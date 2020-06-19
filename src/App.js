@@ -1,21 +1,16 @@
 import React from 'react';
-import './App.css';
+import TodoItem from "./TodoItem"
+import style from './style.module.css';
+
 
 function App() {
     return (
-        <div>
-            <input type="checkbox" />
-            <p>Placeholder text here</p>
-
-            <input type="checkbox" />
-            <p>Placeholder text here</p>
-
-            <input type="checkbox" />
-            <p>Placeholder text here</p>
-
-            <input type="checkbox" />
-            <p>Placeholder text here</p>
-        </div>
+      <div className={style.todolist}>
+        <TodoItem />
+        <TodoItem />
+        <TodoItem />
+        <TodoItem />
+    </div>
     )
 }
 
